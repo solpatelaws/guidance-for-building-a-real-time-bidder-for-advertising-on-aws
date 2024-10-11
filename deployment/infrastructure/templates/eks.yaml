@@ -10,7 +10,7 @@ Parameters:
   EksClusterVersion:
     Type: String
     Description: Version of EKS cluster
-    Default: '1.22'
+    Default: '1.30'
 
   EksVpcId:
     Type: String
