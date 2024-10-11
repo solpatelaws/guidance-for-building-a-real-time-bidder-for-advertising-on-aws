@@ -35,7 +35,7 @@ Parameters:
   NodeGroupReleaseVersion:
     Type: String
     Description: Release version of the Node group
-    Default: "1.22.17-20230217"
+    Default: "1.30.4-20240928"
 
   BasicArmNodeGroupSize:
     Type: Number
