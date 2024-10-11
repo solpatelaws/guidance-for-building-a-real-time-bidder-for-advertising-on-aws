@@ -751,14 +751,14 @@ Resources:
         - Key: stackName
           Value: !Ref AWS::StackName
   
-  CnineInstance:
-    Type: AWS::CloudFormation::Stack
-    DependsOn: VPC
-    Properties:
-      TemplateURL: ./templates/cloud9.yaml
-      Parameters:
-        RootStackName: !Ref RootStackName
-        Subnet04: !GetAtt [VPC, Outputs.SubnetId]
+  # CnineInstance:
+  #   Type: AWS::CloudFormation::Stack
+  #   DependsOn: VPC
+  #   Properties:
+  #     TemplateURL: ./templates/cloud9.yaml
+  #     Parameters:
+  #       RootStackName: !Ref RootStackName
+  #       Subnet04: !GetAtt [VPC, Outputs.SubnetId]
 
 Outputs:
   StackName:
@@ -767,12 +767,12 @@ Outputs:
     Export:
       Name: StackName
 
-  Cloud9IDEURL:
-    Description: IDE URL to access cloud9
-    Value: !GetAtt CnineInstance.Outputs.Cloud9IDEURL
+  # Cloud9IDEURL:
+  #   Description: IDE URL to access cloud9
+  #   Value: !GetAtt CnineInstance.Outputs.Cloud9IDEURL
 
-  Cloud9EnvID:
-    Description: cloud9 instance enevironment ID
-    Value: !GetAtt CnineInstance.Outputs.Cloud9EnvID
+  # Cloud9EnvID:
+  #   Description: cloud9 instance enevironment ID
+  #   Value: !GetAtt CnineInstance.Outputs.Cloud9EnvID
   
 

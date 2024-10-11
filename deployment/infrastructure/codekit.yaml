@@ -428,10 +428,10 @@ Outputs:
     Export:
       Name: EksNvmeProvisionerRepository
   
-  Cloud9IDEURL:
-    Description: IDE URL to access cloud9
-    Value: !GetAtt ApplicationStack.Outputs.Cloud9IDEURL
+  # Cloud9IDEURL:
+  #   Description: IDE URL to access cloud9
+  #   Value: !GetAtt ApplicationStack.Outputs.Cloud9IDEURL
 
-  Cloud9EnvID:
-    Description: cloud9 instance enevironment ID
-    Value: !GetAtt ApplicationStack.Outputs.Cloud9EnvID
+  # Cloud9EnvID:
+  #   Description: cloud9 instance enevironment ID
+  #   Value: !GetAtt ApplicationStack.Outputs.Cloud9EnvID
