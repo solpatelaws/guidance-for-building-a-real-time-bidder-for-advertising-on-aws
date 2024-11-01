@@ -1,0 +1,12 @@
+{
+    "dev": {
+        "REPO_BRANCH":"main",
+        "GITHUB_TOKEN_SECRET_ID": "github-token"
+    },
+    "shared": {
+        "ROOT_STACK_NAME": "aws-rtbkit-solpatel",
+        "STACK_VARIANT": "DynamoDB",
+        "REPO_OWNER":"solpatelaws",
+        "REPO_NAME":"guidance-for-building-a-real-time-bidder-for-advertising-on-aws"
+    }
+}
