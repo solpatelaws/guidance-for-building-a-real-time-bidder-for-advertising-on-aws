@@ -91,7 +91,7 @@ additionalPrometheusRulesMap: {}
 global:
   rbac:
     create: true
-    # pspEnabled: true
+    pspEnabled: false
     # pspAnnotations: {}
       ## Specify pod annotations
       ## Ref: https://kubernetes.io/docs/concepts/policy/pod-security-policy/#apparmor
@@ -1188,8 +1188,8 @@ kube-state-metrics:
   namespaceOverride: ""
   rbac:
     create: true
-  # podSecurityPolicy:
-    # enabled: true
+  podSecurityPolicy:
+    enabled: false
   nodeSelector:
     kubernetes.io/arch: amd64
 
@@ -1662,8 +1662,8 @@ prometheus:
 
   ## Configure additional options for default pod security policy for Prometheus
   ## ref: https://kubernetes.io/docs/concepts/policy/pod-security-policy/
-  # icy:
-    # allowedCapabilities: []
+  podSecurityPolicycy:
+    allowedCapabilities: []
 
   serviceMonitor:
     ## Scrape interval. If not set, the Prometheus default scrape interval is used.
