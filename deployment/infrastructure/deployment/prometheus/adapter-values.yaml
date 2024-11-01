@@ -29,9 +29,9 @@ rbac:
   # Specifies whether RBAC resources should be created
   create: true
 
-psp:
+# psp:
   # Specifies whether PSP resources should be created
-  create: false
+  # create: false
 
 serviceAccount:
   # Specifies whether a service account should be created
